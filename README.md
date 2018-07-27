@@ -1,14 +1,14 @@
 # James' Big Raspberry Pi Wildlife Camera Project
 
-# Part One - Set up the Raspberry Pi
+## Part One - Set up the Raspberry Pi
 
-## 1. Obtain Raspbian operating system and load onto micro SD card.
+### 1. Obtain Raspbian operating system and load onto micro SD card.
 
-### Parts
-Dad’s computer
-Micro SD card
-Micro SD card reader (ask Dad to lend you his)
-### How to:
+#### Parts
+- Dad’s computer
+- Micro SD card
+- Micro SD card reader (ask Dad to lend you his)
+#### How to:
 On Dad’s computer search up www.raspberrypi.org.
 Download ‘Raspian Stretch’ (not NOOBS or LITE).
 Choose the ‘Download ZIP’, and choose ‘Save File’.
