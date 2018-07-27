@@ -1,14 +1,14 @@
-# jamcam
-James Big Wildlife Camera Project
-’ Big Raspberry Pi Wildlife Camera
- 
-Set up Rpi
- 1. Obtain Raspbian operating system and load onto micro SD card.
- a) Parts:
+# James' Big Raspberry Pi Wildlife Camera Project
+
+# Part One - Set up the Raspberry Pi
+
+## 1. Obtain Raspbian operating system and load onto micro SD card.
+
+### Parts
 Dad’s computer
 Micro SD card
 Micro SD card reader (ask Dad to lend you his)
- b) How to:
+### How to:
 On Dad’s computer search up www.raspberrypi.org.
 Download ‘Raspian Stretch’ (not NOOBS or LITE).
 Choose the ‘Download ZIP’, and choose ‘Save File’.
