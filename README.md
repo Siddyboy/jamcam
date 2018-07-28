@@ -8,10 +8,11 @@
 - Dad’s computer
 - Micro SD card
 - Micro SD card reader (ask Dad to lend you his)
-#### How to:
-On Dad’s computer search up www.raspberrypi.org.
-Download ‘Raspian Stretch’ (not NOOBS or LITE).
-Choose the ‘Download ZIP’, and choose ‘Save File’.
+
+#### How to
+- On Dad’s computer search up www.raspberrypi.org.
+- Download ‘Raspian Stretch’ (not NOOBS or LITE).
+- Choose the ‘Download ZIP’, and choose ‘Save File’.
 It will take a few minutes to download – you might have to go and get a drink while you are waiting.
 Find where the zip file is saved. Try looking in your ‘Downloads’ folder.
 Right-click on the zip file and choose ‘Extract Here’.
@@ -29,15 +30,17 @@ Unplug the card reader from the computer.
 Push the micro SD card to remove it from the card reader.
 Put the card reader away.
 
- 2. Connect and power up the Raspberry Pi
- a) Parts:
+### 2. Connect and power up the Raspberry Pi
+
+#### Parts
 Micro SD card with Raspbian operating system
 Raspberry Pi 3 Model B
 Screen with HDMI cable
 USB keyboard and mouse – ask to borrow Thomas’ from his shelf
 USB power cable (type A plug to type micro B plug). You can borrow Dad’s long white one if you are careful.
 USB mains adapter (type A socket). Use the white ‘NEST’ one.
- b) How to:
+
+#### How to
 Insert micro SD card into the socket on the Raspberry Pi
 Plug the keyboard and mouse into any USB (type A) sockets
 Plug the HMDI cable into the HDMI socket
@@ -50,14 +53,18 @@ BOOM! Check that the power LEDs light up on the Raspberry Pi
 The display should show some stuff and a reboot message may show briefly.
 Eventually the desktop image should load and stop.
 
- 3. Set up the Raspberry Pi
- a) Parts
+### 3. Set up the Raspberry Pi
+
+#### Parts
 The Raspberry Pi setup.
- b) How to
-Connect to the wireless local area network (WLAN). Right-click on the network symbol (red crosses) and select ‘AnotherWLAN’ from the list. You will have to ask Daddy for the password. Click OK and wait for a connection.
-Update the Raspberry Pi operating system. Open a terminal and type:
-			sudo apt-get update
-			sudo apt-get dist-upgrade
+
+#### How to
+- Connect to the wireless local area network (WLAN). Right-click on the network symbol (red crosses) and select ‘AnotherWLAN’ from the list. You will have to ask Daddy for the password. Click OK and wait for a connection.
+- Update the Raspberry Pi operating system. Open a terminal and type:
+```
+sudo apt-get update
+sudo apt-get dist-upgrade
+```
 You may have to enter a password, and answer a few questions. And wait a while.
 Click on the raspberry and select Preferences, and then Raspberry Pi Configuration.
 On the System tab:
@@ -74,11 +81,13 @@ Set Timezone to Area: Europe, Location: London. Close enough.
 Check the time display changes to now!
 Reboot the Raspberry Pi.
 
- 4. Access the Raspberry Pi Remotely. Virtual Network Computing (VNC).
- a) Parts:
+### 4. Access the Raspberry Pi Remotely. Virtual Network Computing (VNC).
+
+#### Parts:
 The Raspberry Pi setup
 Daddy’s computer.
- b) How to:
+
+#### How to:
 With the Raspberry Pi running open a terminal to access the Command Line Interface – or CLI. Click on the terminal icon at the top of the screen.
 Enter the following commands one at a time pressing Enter after each line.
 sudo apt-get update
@@ -99,13 +108,15 @@ Unplug the keyboard, mouse and HDMI cable, and put them all away. We don’t nee
 Power up the Raspberry Pi again – this is what they call ‘headless’ because there’s no screen. You should be able to place the Raspberry Pi anywhere in the house and still connect to it using VNC from Dad’s computer. Try it.
 You might have to adjust the screen resolution from the Preferences window. I used ‘DMT mode 82’ and it seemed to work OK. You have to reboot for the change to take effect. Of course this will lose the VNC connection so you will have to connect again.
 
- 5. Connecting the Raspberry Pi camera and taking a photograph.
- a) Parts:
+### 5. Connecting the Raspberry Pi camera and taking a photograph.
+
+#### Parts
 The Raspberry Pi setup (without keyboard, mouse, or HDMI cable).
 Daddy’s computer.
 The Raspberry Pi camera module V2.1
 The Raspberry Pi camera cable
- b) How to:
+
+#### How to
 Connect to the Raspberry Pi remotely via VNC and shut it down. Turn it off at the wall. Disconnect the micro USB cable if it is easier.
 Connect the Raspberry Pi camera cable to the Raspberry Pi. Use the white socket between the HDMI output and the headphones output. The shiny side of the cable connection faces the HDMI output connector.
 Connect the Raspberry Pi camera cable to the Raspberry Pi camera. The shiny side of the cable faces the camera lens side.
@@ -115,11 +126,13 @@ raspistill -v -o test.jpg
 There will be some text on the terminal screen and after a few second the command line prompt ‘$’ should reappear. Nothing seems to have happened but...
 …if you open the file browser (the folders icon at the top of the screen) you should see a new file called ‘test.jpg’. Double click that file and it should show a picture you just took with the camera.
 
- 6. Install the ‘pikrellcam’ software to take motion-triggered videos.
- a) Parts:
+### 6. Install the ‘pikrellcam’ software to take motion-triggered videos.
+
+#### Parts
 The Raspberry Pi setup with camera connected
 Daddy’s computer.
- b) How to:
+
+#### How to
 Start up the Raspberry Pi if it is turned off and connect to it using VNC.
 Open a terminal and enter the following commands one at a time (an explanation of each command is given below):
 cd /home/pi
@@ -144,12 +157,14 @@ In the browser address type the numbers and full stops exactly as you see them i
 The pikrellcam software OSD (On Screen Display) should be displayed. You may have to click on ‘System’ and ‘Start’ to get a picture up and stop the window jerking about.
 If you’ve done it all correctly you should she a live picture from the camera.
 
- 7. Test the video recording and add some extra storage.
- a) Parts:
+### 7. Test the video recording and add some extra storage.
+
+#### Parts
 The Raspberry Pi setup with camera connected
 Daddy’s computer.
 A USB memory stick.
- b) How to:
+
+#### How to
 Still using VNC to control the Raspberry Pi and with the pikrellcam software running, find and click the ‘Enable: Motion’ button on the OSD. The display in the live picture should turn from saying ‘Motion OFF’ in the bottom left hand corner to ‘Motion ON’.
 Try moving something in front of the camera and trigger a movie. You have to stop moving in front of the camera to stop it recording after a few seconds.
 Click on the ‘Media: Videos’ button and you should see your video recorded and you can play it back again. It will be a bit fuzzy and jerky because it is running on the Raspberry Pi and we’re looking at it remotely. Later we will learn how to transfer the video onto Daddy’s computer and watch it very clearly and smoothly.
@@ -174,11 +189,13 @@ Save the file by hitting Ctrl-X, answer ‘y’ when asked if you want to overwr
 Go back to the pikrellcam OSD. Click on the PiKrellCam:raspberrypi at the top of the OSD. Click on the System block and then click on Stop. Wait for the OSD to display ‘PiKrellCam Stopped’. Then click on Start. When pikrellcam has started again click back to the Media: Videos screen. There should be no recorded videos yet and the amount of free memory should display as something like 30 GB.
 Test the system by recording another video and playing it back. Don’t forget to enable the motion detection.
 
- 8. Configure pikrellcam software to correct some settings and make it email you every time it takes a video.
- a) Parts:
+### 8. Configure pikrellcam software to correct some settings and make it email you every time it takes a video.
+
+#### Parts
 The Raspberry Pi setup with camera connected, and memory stick.
 Daddy’s computer.
- b) How to:
+
+#### How to
 First update your package list and then install some software to help the Raspberry Pi send you an email. In a terminal enter each of the following commands and press Enter after each one:
 sudo apt-get update
 sudo apt-get install ssmtp mailutils
@@ -209,11 +226,13 @@ on_motion_preview_save mpack -s pikrellcam@$H $F
 Hit Ctrl+X and confirm the writing of the file.
 Now stop and restart the pikrellcam from the OSD. Trigger a video by waving at the camera. Wait until it finishes recording and then see if you get an email with a picture of your hand!
 
- 9. The last set up task is to allow archiving of the videos from the Raspberry Pi to Daddy’s computer so you can watch them with no jerky laggy-ness.
- a) Parts:
+### 9. The last set up task is to allow archiving of the videos from the Raspberry Pi to Daddy’s computer so you can watch them with no jerky laggy-ness.
+
+#### Parts
 The Raspberry Pi setup with camera connected, and memory stick.
 Daddy’s computer.
- b) How to:
+
+#### How to
 Find out the URL for Daddy’s computer. Open a terminal and type:
 hostname -I
 Make a note of the numbers displayed.
@@ -233,42 +252,49 @@ Go back to the pikrellcam OSD and do a stop/start sequence. You should now see a
 Select a good video and press the button. Now go to Daddy’s computer and look in the folder ‘/srv/mm/videos/pkc-archive’ and click deeper into the folders to find the video.
 Double click on the video to play it. It should be nice a smooth.
 Now you are ready to build the camera hardware and see what we can catch! 
-Build Box
- 1. Tools required:
+
+## Part Two - Build the Hardware
+
+#### Tools required:
  a) Allen keys
  b) Small spanners
  c) Small sockets
  d) spanner for M2.5 – work?!
  e) Tweezers
 
- 2. Assemble the Raspberry Pi to the stand-offs.
- a) Parts:
+### 2. Assemble the Raspberry Pi to the stand-offs.
+
+#### Parts
 Raspberry Pi (camera cable disconnected – see below.)
 4 off M2.5 brass stand-offs
 4 off M2.5 washers
 4 off M2.5 hex socket head screws
- b) Assembly:
+
+#### Assembly
 Turn off and unplug the Raspberry Pi power, keyboard, mouse, and display.
 Remove the camera cable from the Raspberry Pi.
 (Leave the micro SD card and memory stick plugged in.) 
 Fix the four stand-offs to the Raspberry Pi using the washers and screws.
 The stand-offs should be on the same side as the micro-SD card.
-Do the screws up loosely for now; the stand-offs may need to move a little.
+* Do the screws up loosely for now; the stand-offs may need to move a little.
 
- 3. Assemble the Camera to the plastic holder.
- a) Parts:
+### 3. Assemble the Camera to the plastic holder.
+
+#### Parts
 Small plastic lens-and-camera holder (including captive screw and thread inserts)
 Raspberry Pi camera
 2 off M2 washers
 2 off M2 hex socket head screws
- b) Assembly:
+
+#### Assembly
 Screw the camera to the holder using the screws and washers.
 The camera lens should point through the holder.
 The camera connector should point away from the flat end of the holder.
 Do not overtighten the screws; the inserts will pull out.
 
- 4. Assemble the zoom lens and camera to the main board.
- a) Parts:
+### 4. Assemble the zoom lens and camera to the main board.
+
+#### Parts
 Pre-cut perforated board
 Small lens holder with camera attached.
 Large plastic lens holder
@@ -277,7 +303,8 @@ M4 countersunk hex socket screw
 2 off M4 nuts
 Zoom lens with lens covers
 Blue elastic band
- b) Assembly:
+
+#### Assembly
 Identify the slot cut in the main board for the camera cable.
 Rotate the main board so that the slot is on the left.
 Rotate the main board so that the widest section of the board is at the bottom.
@@ -294,39 +321,45 @@ The small end of the zoom lens should sit inside the smaller holder.
 Tighten the smaller holder so that it touches the lens.
 Add the elastic band around the camera and the larger lens holder to keep the two pressed firmly together.
 
- 5. Assemble the Raspberry Pi to the main board
- a) Parts:
-Raspberry Pi with stand-offs fitted
-Main board with camera and zoom lens fitted
-4 off M2.5 washers
-4 off M2.5 nuts
-Raspberry Pi camera cable
- b) Assembly:
-Assemble the Raspberry Pi to the opposite side of the main board from the lens.
-Push the stand-offs through the four holes.
-The micro SD card should be nearest to the slot.
-Tighten the stand-offs to the Raspberry Pi using an Allen key and a spanner.
-Assemble a washer and nut to the stand-offs to secure the Raspberry Pi to the main board.
-Assemble the Raspberry Pi camera cable to the Pi and the camera using the slot in the main board.
+### 5. Assemble the Raspberry Pi to the main board
 
- 6. Final assembly
- a) Parts:
-Plastic case bottom with USB power cable
-Plastic box lid
-4 off M3 countersunk hex socket screws
-USB mains electricity power adapter
- b) Assembly:
-Check everything on the main board is tight and straight.
-Check the micro SD card and memory stick are secure.
-Check the camera cable is secure
-Remove the larger zoom lens cover.
-Do not touch the lens.
-Slide the main board into the case bottom pointing the zoom lens towards the hole in the box and with the Raspberry Pi micro USB power socket facing up.
-Assemble the box lid using the screws. Some help may be required.
-Although you may want to plug it all in first and check that it works and you can still VNC into the Raspberry Pi.
-Also you probably need to leave the lid off so that you can focus the camera in the garden.
+#### Parts
+* Raspberry Pi with (loosely fitted) stand-offs
+* Main board with camera and zoom lens fitted
+* 4 off M2.5 washers
+* 4 off M2.5 nuts
+* Raspberry Pi camera cable
 
-Refs
+#### Assembly
+* Assemble the Raspberry Pi to the opposite side of the main board from the zoom lens.
+* Push the stand-offs through the four holes; the micro SD card should be nearest to the slot in the main board.
+* Tighten the stand-offs to the Raspberry Pi using an Allen key and a spanner.
+
+TODO(SCJK): Find spanner size.
+
+* Assemble a washer and nut to the stand-offs to secure the Raspberry Pi to the main board.
+* Assemble the Raspberry Pi camera cable to the Raspberry Pi and the camera via the access slot in the main board.
+
+### Final assembly
+
+#### Parts
+* Plastic case bottom with captive USB power cable
+* Plastic case lid
+* 4 off M3 countersunk head, hex socket screws
+* USB mains electricity power adapter
+
+#### Assembly
+* Check everything on the main board is tight and straight.
+* Check the micro SD card and memory stick are secure.
+* Check the camera cable is secure.
+* Remove the larger zoom lens cover; do not touch the lens.
+* Slide the main board into the case bottom pointing the zoom lens towards the hole in the box, and with the Raspberry Pi micro USB power socket pointing up.
+* Plug the power cable into the micro USB power socket on the Raspberry Pi.
+* Before assembling the case top you may want to power up the system and check that it works and that you can still access it remotely.
+* You may also want to leave the case open so that you can focus the lens once you have the camera installed in your location of choice. 
+* Assemble the box lid using the screws; it may help to engage all of the screws' threads loosely before tightening.
+
+Refs and acks
 
 http://shaunsbennett.com/piblog/?p=1
 
