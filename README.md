@@ -226,46 +226,56 @@ on_motion_preview_save mpack -s pikrellcam@$H $F
 Hit Ctrl+X and confirm the writing of the file.
 Now stop and restart the pikrellcam from the OSD. Trigger a video by waving at the camera. Wait until it finishes recording and then see if you get an email with a picture of your hand!
 
-### 9. The last set up task is to allow archiving of the videos from the Raspberry Pi to Daddy’s computer so you can watch them with no jerky laggy-ness.
+### Set up archiving of the videos from the Raspberry Pi to another computer
 
 #### Parts
-The Raspberry Pi setup with camera connected, and memory stick.
-Daddy’s computer.
+* The Raspberry Pi setup with camera and memory stick connected
+* Another computer (*dadcomp*)
 
 #### How to
-Find out the URL for Daddy’s computer. Open a terminal and type:
-hostname -I
-Make a note of the numbers displayed.
-No change the the Raspberry Pi using the VNC connection. Now edit the ‘hosts’ file to give Daddy’s computer a nickname on the Raspberry Pi. Open a terminal and type:
-sudo nano /etc/hosts
-Add a line to the file at the end:
-dadcomp		a.b.c.d
-where the a, b, c, and d are the numbers you wrote down. Hit Ctrl+X when you are finished and type ‘y’, and Enter to save the file.
-Now we have to edit the ‘fstab’ file. Enter in the terminal:
-sudo nano /etc/fstab
-Add this single line to the end of the file and save it in the usual way (Ctrl+X, etc.)
-dadcomp:/srv/mm/videos/pkc-archive /home/pi/pikrellcam/media/archive nfs users,noauto 0 0
-Next enter the following to mount the remote archive:
-sudo mount dadcomp:/srv/mm/videos/pkc-archive
-Nothing should happen if it’s all worked. Now enter ‘df’ in the terminal and hit enter. You should see a line in the output confirming the connection.
-Go back to the pikrellcam OSD and do a stop/start sequence. You should now see an ‘NFS Archive’ button appear on the videos screen.
-Select a good video and press the button. Now go to Daddy’s computer and look in the folder ‘/srv/mm/videos/pkc-archive’ and click deeper into the folders to find the video.
-Double click on the video to play it. It should be nice a smooth.
-Now you are ready to build the camera hardware and see what we can catch! 
+* SETUP REMOTE ARCHIVE STUFF!
+
+* Find out the URL for the *dadcomp* computer; open a terminal on the *dadcomp* and type:
+```
+	hostname -I
+```
+* Make a note of the numbers displayed.
+* Change the the Raspberry Pi using the VNC connection.
+* Edit the *hosts* file on the Raspberry Pi to give the *dadcomp* computer a nickname on the Raspberry Pi. Open a terminal and type:
+```
+	sudo nano /etc/hosts
+```
+* Add a line to the file at the end, where the a, b, c, and d are the numbers you wrote down.
+```
+	dadcomp		a.b.c.d
+```
+* Hit Ctrl+X when you are finished and type ‘y’, and Enter, to save the file.
+* Edit the *fstab* file; enter in the terminal:
+```
+	sudo nano /etc/fstab
+```
+* Add this single line to the end of the file and save it in the usual way (Ctrl+X, y, Enter)
+```
+	dadcomp:<FULL_PATH_TO_ARCHIVE_ON_DADCOMP> /home/pi/pikrellcam/media/archive nfs users,noauto 0 0
+```
+* Mount the remote archive from the Raspberry Pi.
+```
+	sudo mount dadcomp:<FULL_PATH_TO_ARCHIVE_ON_DADCOMP>
+```
+* Nothing should happen if it’s all worked.
+* Enter ```df``` in the terminal and hit enter; you should see a line in the output confirming the connection.
+* Go back to the pikrellcam OSD and perform a stop/start sequence; you should now see an ‘NFS Archive’ button appear on the videos screen.
+* Select a good video and press the button.
+* On *dadcomp* look in the folder ```<FULL_PATH_TO_ARCHIVE_ON_DADCOMP>``` and click deeper into the folders to find the video you just archived.
+* Double click on the video to play it; it should be nice a smooth.
+* Now you are ready to build the camera hardware and see what we can catch! 
 
 ## Part Two - Build the Hardware
-
-#### Tools required:
- a) Allen keys
- b) Small spanners
- c) Small sockets
- d) spanner for M2.5 – work?!
- e) Tweezers
 
 ### Assemble the Raspberry Pi to the stand-offs
 
 #### Parts
-*Raspberry Pi (camera cable disconnected – see below)
+* Raspberry Pi (camera cable disconnected – see below)
 * 4 off M2.5 x 6 M-F (brass) stand-offs
 * 4 off M2.5 washers
 * 4 off M2.5 cap head, hex socket screws
@@ -291,6 +301,7 @@ Superglue! etc carve up too
   * Cut the thread length from 20 to 18.
   * Put a flat onto the head, almost through into the hex socket.
 * Machine the plastic holder:
+  * Deepen the central fixing hole so that the screw will fit with its head below the surface.
   * Reduce the overall thickness by reducing one face flush with the recessed section. This ensures that the camera can get close enough to the lens.
   * On the other face remove the circular arc only is flush with the recessed section. This makes space for some of the parts on the camera IC.
   * Drill one hole in each arm of the holder.
@@ -299,8 +310,9 @@ Superglue! etc carve up too
     * Diameter to suit the stand-offs with a push fit.
     * Spacing to suit the Raspberry Pi Camera  - 21 mm.
     * Depth to suit the stand-offs.
-* Push the stand-offs into the holes.
-* Drop
+* Push the stand-offs into the holes just sub-flush with the surface.
+* Enter the screw into the holder aligning the flat on the head with the completely machined surface.
+* Glue the screw in position; you will not be able to access the head during assembly.
   
 ### Assemble the Raspberry Pi camera to the plastic holder
 
