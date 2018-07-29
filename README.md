@@ -262,25 +262,46 @@ Now you are ready to build the camera hardware and see what we can catch!
  d) spanner for M2.5 – work?!
  e) Tweezers
 
-### Assemble the Raspberry Pi to the stand-offs.
+### Assemble the Raspberry Pi to the stand-offs
 
 #### Parts
-Raspberry Pi (camera cable disconnected – see below.)
-4 off M2.5 brass stand-offs
-4 off M2.5 washers
-4 off M2.5 hex socket head screws
+*Raspberry Pi (camera cable disconnected – see below)
+* 4 off M2.5 x 6 M-F (brass) stand-offs
+* 4 off M2.5 washers
+* 4 off M2.5 cap head, hex socket screws
 
 #### Assembly
-Turn off and unplug the Raspberry Pi power, keyboard, mouse, and display.
-Remove the camera cable from the Raspberry Pi.
-(Leave the micro SD card and memory stick plugged in.) 
-Fix the four stand-offs to the Raspberry Pi using the washers and screws.
-The stand-offs should be on the same side as the micro-SD card.
-* Do the screws up loosely for now; the stand-offs may need to move a little.
+* Turn off and unplug the Raspberry Pi power, keyboard, mouse, and display.
+* Remove the camera cable from the Raspberry Pi.
+* Leave the micro SD card and memory stick plugged in.
+* Fix the four stand-offs to the Raspberry Pi using the washers and screws.
+* The stand-offs should be on the same side as the micro-SD card.
+* Do the screws up loosely for now; the stand-offs may need to move a little later.
 
-### Prep small holder?
-captive screw and isnert! Superglue! etc carve up too
+### Prepare the small lens-and-camera holder
 
+#### Parts
+* Small plastic lens-and-camera holder
+* 2 off M2 x 5 F-F (brass) stand-offs
+* M4 x 20 cap head, hex socket screw
+Superglue! etc carve up too
+
+#### Assembly
+* Machine the M4 screw:
+  * Cut the thread length from 20 to 18.
+  * Put a flat onto the head, almost through into the hex socket.
+* Machine the plastic holder:
+  * Reduce the overall thickness by reducing one face flush with the recessed section. This ensures that the camera can get close enough to the lens.
+  * On the other face remove the circular arc only is flush with the recessed section. This makes space for some of the parts on the camera IC.
+  * Drill one hole in each arm of the holder.
+    * From the face that was only partially machined.
+    * At the widest part of the clip - i.e. across the full diameter.
+    * Diameter to suit the stand-offs with a push fit.
+    * Spacing to suit the Raspberry Pi Camera  - 21 mm.
+    * Depth to suit the stand-offs.
+* Push the stand-offs into the holes.
+* Drop
+  
 ### Assemble the Raspberry Pi camera to the plastic holder
 
 #### Parts
