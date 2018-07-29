@@ -343,9 +343,10 @@ TODO(SCJK): Find spanner size.
 ### Final assembly
 
 #### Parts
-* Plastic case bottom with captive USB power cable
+* Plastic case bottom (with captive USB power cable)
 * Plastic case lid
-* 4 off M3 countersunk head, hex socket screws
+* 4 off M3 x 10 countersunk head, hex socket screws
+* USB power cable (type A plug to angled type B micro plug)
 * USB mains electricity power adapter
 
 #### Assembly
