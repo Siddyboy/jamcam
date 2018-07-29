@@ -321,7 +321,7 @@ The small end of the zoom lens should sit inside the smaller holder.
 Tighten the smaller holder so that it touches the lens.
 Add the elastic band around the camera and the larger lens holder to keep the two pressed firmly together.
 
-### 5. Assemble the Raspberry Pi to the main board
+### Assemble the Raspberry Pi to the main board
 
 #### Parts
 * Raspberry Pi with (loosely fitted) stand-offs
@@ -333,12 +333,20 @@ Add the elastic band around the camera and the larger lens holder to keep the tw
 #### Assembly
 * Assemble the Raspberry Pi to the opposite side of the main board from the zoom lens.
 * Push the stand-offs through the four holes; the micro SD card should be nearest to the slot in the main board.
-* Tighten the stand-offs to the Raspberry Pi using an Allen key and a spanner.
-
-TODO(SCJK): Find spanner size.
-
+* Tighten the stand-offs to the Raspberry Pi using a 2 mm hex key and a 5 mm spanner; make sure the edge of the Raspberry Pi board is flush with the longest edge of the main board.
 * Assemble a washer and nut to the stand-offs to secure the Raspberry Pi to the main board.
 * Assemble the Raspberry Pi camera cable to the Raspberry Pi and the camera via the access slot in the main board.
+
+### Prepare plastic case
+
+#### Parts
+* Plastic case bottom
+* USB power cable (type A plug to angled type B micro plug)
+
+#### Assembly
+* cut big hole
+* cut slot for cable
+* glue up
 
 ### Final assembly
 
@@ -346,7 +354,6 @@ TODO(SCJK): Find spanner size.
 * Plastic case bottom (with captive USB power cable)
 * Plastic case lid
 * 4 off M3 x 10 countersunk head, hex socket screws
-* USB power cable (type A plug to angled type B micro plug)
 * USB mains electricity power adapter
 
 #### Assembly
