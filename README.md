@@ -262,7 +262,7 @@ Now you are ready to build the camera hardware and see what we can catch!
  d) spanner for M2.5 – work?!
  e) Tweezers
 
-### 2. Assemble the Raspberry Pi to the stand-offs.
+### Assemble the Raspberry Pi to the stand-offs.
 
 #### Parts
 Raspberry Pi (camera cable disconnected – see below.)
@@ -278,48 +278,52 @@ Fix the four stand-offs to the Raspberry Pi using the washers and screws.
 The stand-offs should be on the same side as the micro-SD card.
 * Do the screws up loosely for now; the stand-offs may need to move a little.
 
-### 3. Assemble the Camera to the plastic holder.
+### Prep small holder?
+captive screw and isnert! Superglue! etc carve up too
+
+### Assemble the Raspberry Pi camera to the plastic holder
 
 #### Parts
-Small plastic lens-and-camera holder (including captive screw and thread inserts)
-Raspberry Pi camera
-2 off M2 washers
-2 off M2 hex socket head screws
+* Small plastic lens-and-camera holder (including captive screw and thread inserts)
+* Raspberry Pi camera
+* 2 off M2 washers
+* 2 off M2 x 5 cap head, hex socket screws
 
 #### Assembly
-Screw the camera to the holder using the screws and washers.
-The camera lens should point through the holder.
-The camera connector should point away from the flat end of the holder.
-Do not overtighten the screws; the inserts will pull out.
+* Screw the camera to the holder using the screws and washers.
+* The camera lens should point through the holder.
+* The camera connector should point away from the flat end of the holder.
+* Do not over-tighten the screws; the thread inserts may pull out of the holder.
 
-### 4. Assemble the zoom lens and camera to the main board.
+### Assemble the zoom lens and Raspberry Pi camera to the main board
 
 #### Parts
-Pre-cut perforated board
-Small lens holder with camera attached.
-Large plastic lens holder
-M4 countersunk hex socket screw
-2 off M4 washers – large
-2 off M4 nuts
-Zoom lens with lens covers
-Blue elastic band
+* Pre-cut perforated main board
+* Small lens holder with camera attached
+* Large plastic lens holder
+* M4 x 20 countersunk head, hex socket screw
+* 2 off M4 penny washers (~14 mm dia.)
+* 2 off M4 nuts
+* Zoom lens with lens covers fitted
+* Rubber band
 
 #### Assembly
-Identify the slot cut in the main board for the camera cable.
-Rotate the main board so that the slot is on the left.
-Rotate the main board so that the widest section of the board is at the bottom.
-Mount the large lens holder to the large hole on the right hand side of the board.
-Use the countersunk screw, a washer and a nut.
-Orient the lens holder perpendicular to the long axis of the board.
-Tighten the nut and screw using an Allen key and a spanner.
-Mount the small lens holder and camera through the other hole.
-Mount it from the same side, and in the same orientation as the larger one.
-User another washer and nut but do not tighten completely.
-Remove the lens cover from the small end of the zoom lens, taking care not to touch the glass lens.
-Push the lens carefully into the large holder so that the small end points towards the camera cable slot.
-The small end of the zoom lens should sit inside the smaller holder.
-Tighten the smaller holder so that it touches the lens.
-Add the elastic band around the camera and the larger lens holder to keep the two pressed firmly together.
+* Cut the M4 screw from 20 to 17 overall length.
+* Identify the slot cut in the main board for the camera cable.
+* Rotate the main board so that the slot is on the left.
+* Rotate the main board so that the longest edge of the board is at the bottom.
+* Mount the large lens holder to the large hole on the right hand side of the board.
+* Use the cut down M4 screw, a washer, and a nut.
+* Orient the lens holder perpendicular to the long axis of the board.
+* Tighten the nut and screw using a hex key (2.5 mm) and a spanner (7 mm).
+* Mount the small lens holder and camera through the other hole.
+* Mount it from the same side, and in the same orientation as the larger one.
+* User another washer and nut but do not tighten completely yet.
+* Remove the lens cover from the small end of the zoom lens, taking care not to touch the glass lens.
+* Push the lens carefully into the large holder so that the small end points towards the camera cable slot.
+* The small end of the zoom lens should sit inside the smaller holder.
+* Tighten the smaller holder so that it touches the lens.
+* Add the elastic band around the camera and the larger lens holder to keep the two pressed firmly together.
 
 ### Assemble the Raspberry Pi to the main board
 
@@ -333,8 +337,9 @@ Add the elastic band around the camera and the larger lens holder to keep the tw
 #### Assembly
 * Assemble the Raspberry Pi to the opposite side of the main board from the zoom lens.
 * Push the stand-offs through the four holes; the micro SD card should be nearest to the slot in the main board.
-* Tighten the stand-offs to the Raspberry Pi using a 2 mm hex key and a 5 mm spanner; make sure the edge of the Raspberry Pi board is flush with the longest edge of the main board.
+* Tighten the stand-offs to the Raspberry Pi using a hex key (2 mm) and a spanner (5 mm).
 * Assemble a washer and nut to the stand-offs to secure the Raspberry Pi to the main board.
+* Make sure the edge of the Raspberry Pi board is flush with the longest edge of the main board. This will mean it sits as low down in the plastic case as possible and there will be enough room for the USB power connector at the top.
 * Assemble the Raspberry Pi camera cable to the Raspberry Pi and the camera via the access slot in the main board.
 
 ### Prepare plastic case
