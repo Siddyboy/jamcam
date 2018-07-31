@@ -30,14 +30,14 @@
   * Cut the thread length from 20 to 18.
   * Put a flat onto the head, almost through into the hex socket.
 * Machine the plastic holder:
-  * Deepen the central fixing hole so that the screw will fit with its head below the surface.
+  * Increase the depth of the counterbore in the central fixing hole so that the screw will fit with its head below the concave surface.
   * Reduce the overall thickness by reducing one face flush with the recessed section. This ensures that the camera can get close enough to the lens.
-  * On the other face remove the circular arc only is flush with the recessed section. This makes space for some of the parts on the camera IC.
+  * On the other face remove the circular arc only so that it is flush with the recessed section. This makes space for some of the parts on the camera board and ensures the camera sits flat on the holder.
   * Drill one hole in each arm of the holder.
     * From the face that was only partially machined.
     * At the widest part of the clip - i.e. across the full diameter.
-    * Diameter to suit the stand-offs with a push fit.
-    * Spacing to suit the Raspberry Pi Camera  - 21 mm.
+    * Hole diameter to suit the stand-offs with a push fit.
+    * Hole pitch to suit the Raspberry Pi Camera - 21 mm.
     * Depth to suit the stand-offs.
 * Push the stand-offs into the holes just sub-flush with the surface.
 * Enter the screw into the holder aligning the flat on the head with the completely machined surface.
