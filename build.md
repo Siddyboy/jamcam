@@ -104,21 +104,10 @@
 * Make sure the edge of the Raspberry Pi board is flush with the longest edge of the main board. This will mean it sits as low down in the plastic case as possible and there will be enough room for the USB power connector at the top.
 * Assemble the Raspberry Pi camera cable to the Raspberry Pi and the camera via the access slot in the main board.
 
-### Prepare plastic case
-
-#### Parts
-* Plastic case bottom
-* USB power cable (type A plug to angled type B micro plug)
-
-#### Assembly
-* cut big hole
-* cut slot for cable
-* glue up
-
 ### Final assembly
 
 #### Parts
-* Plastic case bottom (with captive USB power cable)
+* Plastic case bottom (pre-cut and with captive USB power cable)
 * Plastic case lid
 * 4 off M3 x 10 countersunk head, hex socket screws
 * USB mains electricity power adapter
