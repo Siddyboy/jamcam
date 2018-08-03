@@ -83,9 +83,9 @@
 * User another washer and nut but do not tighten completely yet.
 * Remove the lens cover from the small end of the zoom lens, taking care not to touch the glass lens.
 * Push the lens carefully into the large holder so that the small end points towards the camera cable slot.
-* The small end of the zoom lens should sit inside the smaller holder.
+* The small (threaded) end of the zoom lens should sit inside the smaller holder.
 * Tighten the smaller holder so that it touches the lens.
-* Add the elastic band around the camera and the larger lens holder to keep the two pressed firmly together.
+* Add the elastic band around the camera and the larger lens holder to keep the two pressed firmly together. The main board may flex a little.
 
 ### Assemble the Raspberry Pi to the main board
 

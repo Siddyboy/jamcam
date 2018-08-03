@@ -6,5 +6,6 @@
 
 * The drawing shown is the design I ended up with after several attempts. It can definitely be optimised further to align the optics with the case and to make access to some of the nuts easier.
 
+* It definitely helps to clamp the board between two pieces of scrap wood while drilling holes. Clamp one piece of wood behind the hole location and the other in front as close to the hole as possible without getting in the way of the drill chuck.
 
 
