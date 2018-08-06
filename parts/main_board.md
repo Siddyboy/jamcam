@@ -8,4 +8,4 @@
 
 * It definitely helps to clamp the board between two pieces of scrap wood while drilling holes. Clamp one piece of wood behind the hole location and the other in front as close to the hole as possible without getting in the way of the drill chuck.
 
-[main board]: https://github.com/Siddyboy/jamcam/tree/images/board.jpg
+[main board]:https://github.com/Siddyboy/jamcam/tree/images/board.jpg
