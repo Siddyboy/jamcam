@@ -1,8 +1,6 @@
 # Main Board
 
-![main board](https://github.com/Siddyboy/jamcam/images/board.jpg "Main Board")
-
-* The main board was made from some old phenolic resin perforated circuit board.
+* The [main board] was made from some old phenolic resin perforated circuit board.
 
 * The board was trackless (i.e. no copper tracks) and approximately 1.6 mm thick.
 
@@ -10,5 +8,4 @@
 
 * It definitely helps to clamp the board between two pieces of scrap wood while drilling holes. Clamp one piece of wood behind the hole location and the other in front as close to the hole as possible without getting in the way of the drill chuck.
 
-
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+[main board]: https://github.com/Siddyboy/jamcam/images/board.jpg
