@@ -6,8 +6,6 @@ Manufacturers part number: BIM2005/25-GY/GY
 
 Amazon ASIN: B07B2WVW7G
 
-
-
 ### Prepare plastic case
 
 #### Parts
@@ -16,7 +14,7 @@ Amazon ASIN: B07B2WVW7G
 
 #### Assembly
 * Separate the plastic case halves. Store the top half safely.
-* Cut the holes in the 
-cut big hole
-* cut slot for cable
-* glue up
+* Discard or store the four screws supplied. Replace with hex socket screws (see main build instructions).
+* Cut the holes in the bottom of the case according the [case drawing](../images/case.jpg "Case Drawing"). 
+* Secure the USB power cable using a rubber grommet and a small cable tie leaving enough length to reach the Raspberry Pi power socket. You will have to slot the grommet to take the cable.
+* Glue the removed case section back to hold the power cable captive.

@@ -32,7 +32,7 @@
 * Machine the plastic holder:
   * Increase the depth of the counterbore in the central fixing hole so that the screw will fit with its head below the concave surface.
   * Reduce the overall thickness by reducing one face flush with the recessed section. This ensures that the camera can get close enough to the lens.
-  * On the other face remove the circular arc only so that it is flush with the recessed section. This makes space for some of the parts on the camera board and ensures the camera sits flat on the holder.
+  * On the other face remove the centre part of the circular arc only so that it is flush with the recessed section. This makes space for some of the parts on the camera board and ensures the camera sits flat on the holder.
   * Drill one hole in each arm of the holder.
     * From the face that was only partially machined.
     * At the widest part of the clip - i.e. across the full diameter.
