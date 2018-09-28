@@ -2,65 +2,71 @@
 
 ## Part One - Set up the Raspberry Pi
 
-### 1. Obtain Raspbian operating system and load onto micro SD card.
+### Obtain Raspbian operating system and load onto micro SD card.
 
 #### Parts
-- Dad’s computer
-- Micro SD card
-- Micro SD card reader (ask Dad to lend you his)
+* Computer (running Ubuntu Linux, with internet access)
+* Micro SD card
+* Micro SD card reader
 
 #### How to
-- On Dad’s computer search up www.raspberrypi.org.
-- Download ‘Raspian Stretch’ (not NOOBS or LITE).
-- Choose the ‘Download ZIP’, and choose ‘Save File’.
-It will take a few minutes to download – you might have to go and get a drink while you are waiting.
-Find where the zip file is saved. Try looking in your ‘Downloads’ folder.
-Right-click on the zip file and choose ‘Extract Here’.
-Find the extracted ‘.img’ file in your Downloads folder.
-Insert the micro SD card into the card reader.
-Plug the card reader into a USB port on the computer.
-Ignore all the windows that pop up.
-Right-click on the ‘.img’ file and choose ‘Open With Disk Image Writer’.
-In the ‘Restore Image’ window select 7.9 GB Drive as the destination.
-Click Start Restoring...
-You will probably need Dad to authenticate.
-This will take a few minutes. Don’t unplug anything.
-Eject the disk by right-clicking on the icon and selecting ‘Eject Parent Drive’.
-Unplug the card reader from the computer.
-Push the micro SD card to remove it from the card reader.
-Put the card reader away.
+* On computer search up www.raspberrypi.org.
+* Download ‘Raspian Stretch’ (not NOOBS or LITE).
+* Choose the ‘Download ZIP’, and choose ‘Save File’.
+  * It will take a few minutes to download – you might have to go and get a drink while you are waiting.
+* Find where the zip file is saved. Try looking in your ‘Downloads’ folder.
+* Right-click on the zip file and choose ‘Extract Here’.
+* Find the extracted ‘.img’ file in your Downloads folder.
+* Insert the micro SD card into the card reader.
+* Plug the card reader into a USB port on the computer.
+* Ignore all the windows that pop up.
+* Right-click on the ‘.img’ file and choose ‘Open With Disk Image Writer’.
+* In the ‘Restore Image’ window select the micro SD card as the destination.
+* Click Start Restoring...
+  * You will probably need an admin to authenticate.
+  * This will take a few minutes.
+  * Don’t unplug anything.
+* Eject the disk by right-clicking on the icon and selecting ‘Eject Parent Drive’.
+* Unplug the card reader from the computer.
+* Push the micro SD card to remove it from the card reader.
+* Put the card reader away.
 
-### 2. Connect and power up the Raspberry Pi
+### Connect and power up the Raspberry Pi
 
 #### Parts
-Micro SD card with Raspbian operating system
-Raspberry Pi 3 Model B
-Screen with HDMI cable
-USB keyboard and mouse – ask to borrow Thomas’ from his shelf
-USB power cable (type A plug to type micro B plug). You can borrow Dad’s long white one if you are careful.
-USB mains adapter (type A socket). Use the white ‘NEST’ one.
+* Micro SD card with Raspbian operating system
+* Raspberry Pi 3 Model B
+* Screen with HDMI cable
+* USB keyboard and mouse
+* USB power cable (type A plug to type micro B plug)
+* USB mains adapter (type A socket)
 
 #### How to
-Insert micro SD card into the socket on the Raspberry Pi
-Plug the keyboard and mouse into any USB (type A) sockets
-Plug the HMDI cable into the HDMI socket
-Plug the USB cable micro B plug into the power socket
-Plug the USB cable A plug into the mains adapter
-Plug the mains adapter into the wall socket.
-Turn the monitor to its HDMI input.
-Power on the wall socket.
-BOOM! Check that the power LEDs light up on the Raspberry Pi
-The display should show some stuff and a reboot message may show briefly.
-Eventually the desktop image should load and stop.
+* Insert micro SD card into the socket on the Raspberry Pi.
+* Plug the keyboard and mouse into any USB (type A) sockets.
+* Plug the HMDI cable into the HDMI socket.
+* Plug the USB cable micro B plug into the power socket.
+* Plug the USB cable A plug into the mains adapter.
+* Plug the mains adapter into the wall socket.
+* Turn the monitor to its HDMI input.
+* Power on the wall socket.
+* BOOM!
+* Check that the power LEDs light up on the Raspberry Pi
+* The display should show some stuff and a reboot message may show briefly.
+* Eventually the desktop image should load and stop.
 
-### 3. Set up the Raspberry Pi
+### Set up the Raspberry Pi
 
 #### Parts
-The Raspberry Pi setup.
+* The Raspberry Pi setup.
 
 #### How to
-- Connect to the wireless local area network (WLAN). Right-click on the network symbol (red crosses) and select ‘AnotherWLAN’ from the list. You will have to ask Daddy for the password. Click OK and wait for a connection.
-- Update the Raspberry Pi operating system. Open a terminal and type:
+* Connect to the wireless local area network (WLAN).
+  * Right-click on the network symbol (red crosses) and select your WLAN from the list.
+  * You will have to ask the owner for the password.
+* Click OK and wait for a connection.
+* Update the Raspberry Pi operating system.
+  * Open a terminal and type:
 ```
 sudo apt-get update
 sudo apt-get dist-upgrade
