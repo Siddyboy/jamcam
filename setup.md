@@ -71,13 +71,13 @@
 sudo apt-get update
 sudo apt-get dist-upgrade
 ```
-You may have to enter a password, and answer a few questions. And wait a while.
-Click on the raspberry and select Preferences, and then Raspberry Pi Configuration.
-On the System tab:
-Boot To Desktop as the Current User.
-Autologin 4
-Wait for Network 4
-Disable the Splash Screen
+  * You may have to enter a password, and answer a few questions. And wait a while.
+* Click on the raspberry icon and select 'Preferences', and then 'Raspberry Pi Configuration'.
+* On the System tab:
+  * Boot To Desktop as the Current User.
+- [x] Autologin [x]
+  * [x]Wait for Network [x]
+  * Disable the Splash Screen
 On the Interfaces tab:
 Enable Camera so we can take pictures – yay!
 Enable VNC so that we can access the Pi remotely.
