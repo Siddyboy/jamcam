@@ -75,7 +75,7 @@ sudo apt-get dist-upgrade
 * Click on the raspberry icon and select 'Preferences', and then 'Raspberry Pi Configuration'.
 * On the System tab:
   * Boot To Desktop as the Current User.
-- [x] Autologin [x]
+  - [x] Autologin [x]
   * [x]Wait for Network [x]
   * Disable the Splash Screen
 On the Interfaces tab:
