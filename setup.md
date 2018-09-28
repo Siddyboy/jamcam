@@ -75,17 +75,17 @@ sudo apt-get dist-upgrade
 * Click on the raspberry icon and select 'Preferences', and then 'Raspberry Pi Configuration'.
 * On the System tab:
   * Boot To Desktop as the Current User.
-  - [x] Autologin [x]
-  * [x]Wait for Network [x]
+  - [x] Autologin
+  - [x] Wait for Network
   * Disable the Splash Screen
-On the Interfaces tab:
-Enable Camera so we can take pictures – yay!
-Enable VNC so that we can access the Pi remotely.
-On the Localisation tab:
-Set Locale to English (language), GB (country), and UTF-8 (character encoding).
-Set Timezone to Area: Europe, Location: London. Close enough.
-Check the time display changes to now!
-Reboot the Raspberry Pi.
+* On the Interfaces tab:
+  * Enable Camera so we can take pictures – yay!
+  * Enable VNC so that we can access the Pi remotely.
+* On the Localisation tab:
+  * Set Locale to English (language), GB (country), and UTF-8 (character encoding).
+  * Set Timezone to Area: Europe, Location: London. Close enough.
+* Check the time display changes to now!
+* Reboot the Raspberry Pi.
 
 ### 4. Access the Raspberry Pi Remotely. Virtual Network Computing (VNC).
 
