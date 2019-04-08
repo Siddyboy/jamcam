@@ -90,29 +90,37 @@ sudo apt-get dist-upgrade
 ### 4. Access the Raspberry Pi Remotely. Virtual Network Computing (VNC).
 
 #### Parts:
-The Raspberry Pi setup
-Daddy’s computer.
+* The Raspberry Pi setup
+* Daddy’s computer.
 
 #### How to:
-With the Raspberry Pi running open a terminal to access the Command Line Interface – or CLI. Click on the terminal icon at the top of the screen.
-Enter the following commands one at a time pressing Enter after each line.
+* With the Raspberry Pi running open a terminal to access the Command Line Interface – or CLI. Click on the terminal icon at the top of the screen.
+* Enter the following commands one at a time pressing Enter after each line. This will check that you have the latest versions installed. You may have to answer a few questions. Just type Y for yes.
+```
 sudo apt-get update
 sudo apt-get install real-vnc-server real-vnc-viewer
-This will check that you have the latest versions installed. You may have to answer a few questions. Just type Y for yes.
-Sign into RealVNC account on the Raspberry Pi: click on the VNC symbol at the top of the screen, click on the menu icon, and select ‘Licensing...’ from the menu.
-Use the option ‘Sign in to your Real VNC account’.
-Sign in using Dad’s VNC account. Username is . Password is’.
-Choose ‘Connectivity method’ of ‘Direct and cloud’.
-Click OK to any warnings.
-Click next until you are sorted.
-Now back on Dad’s computer start VNC Viewer from Dash Home. You might have to log into Dad’s VNC account.
-Right-click on ‘raspberrypi’ in ‘Simon’s Team’ and click ‘Connect...’.
-Click Continue at the identity check and log in to the Raspberry Pi. Username ‘’ (not ), password’.
-If it all works you should now be looking at the Raspberry Pi desktop on Dad’s computer. Amazing.
-Shut down the Raspberry Pi remotely from Dad’s computer, and power it off at the wall.
-Unplug the keyboard, mouse and HDMI cable, and put them all away. We don’t need them any more.
-Power up the Raspberry Pi again – this is what they call ‘headless’ because there’s no screen. You should be able to place the Raspberry Pi anywhere in the house and still connect to it using VNC from Dad’s computer. Try it.
-You might have to adjust the screen resolution from the Preferences window. I used ‘DMT mode 82’ and it seemed to work OK. You have to reboot for the change to take effect. Of course this will lose the VNC connection so you will have to connect again.
+```
+* Sign into RealVNC account on the Raspberry Pi.
+  * Click on the VNC symbol at the top of the screen
+  * Click on the menu icon, and select ‘Licensing...’ from the menu.
+  * Use the option ‘Sign in to your Real VNC account’.
+  * Sign in using Dad’s VNC account; ask him for the username and password.
+  * Choose ‘Connectivity method’ of ‘Direct and cloud’.
+  * Click OK to any warnings.
+  * Click next until you are sorted.
+* Now back on Dad’s computer start VNC Viewer from Dash Home. You might have to log into Dad’s VNC account.
+* Right-click on ‘raspberrypi’ in ‘Simon’s Team’ and click ‘Connect...’.
+* Click Continue at the identity check and log in to the Raspberry Pi.
+* If it all works you should now be looking at the Raspberry Pi desktop on Dad’s computer.
+* Amazing.
+* Shut down the Raspberry Pi remotely from Dad’s computer, and power it off at the wall.
+* Unplug the keyboard, mouse and HDMI cable, and put them all away. We don’t need them any more.
+* Power up the Raspberry Pi again – this is what they call ‘headless’ because there’s no screen.
+* You should be able to place the Raspberry Pi anywhere in the house and still connect to it using VNC from Dad’s computer. Try it.
+  * You might have to adjust the screen resolution from the Preferences window.
+  * I used ‘DMT mode 82’ and it seemed to work OK.
+  * You have to reboot for the change to take effect.
+  * Of course this will lose the VNC connection so you will have to connect again.
 
 ### 5. Connecting the Raspberry Pi camera and taking a photograph.
 
