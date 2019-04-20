@@ -300,24 +300,24 @@ on_motion_preview_save mpack -s pikrellcam@$H $F <destination-email-address>
 * Change the the Raspberry Pi using the VNC connection.
 * Edit the *hosts* file on the Raspberry Pi to give the *dadcomp* computer a nickname on the Raspberry Pi. Open a terminal and type:
 ```
-	sudo nano /etc/hosts
+sudo nano /etc/hosts
 ```
 * Add a line to the file at the end, where the a, b, c, and d are the numbers you wrote down.
 ```
-	dadcomp		a.b.c.d
+a.b.c.d		dadcomp
 ```
 * Hit Ctrl+X when you are finished and type ‘y’, and Enter, to save the file.
 * Edit the *fstab* file; enter in the terminal:
 ```
-	sudo nano /etc/fstab
+sudo nano /etc/fstab
 ```
 * Add this single line to the end of the file and save it in the usual way (Ctrl+X, y, Enter)
 ```
-	dadcomp:<FULL_PATH_TO_ARCHIVE_ON_DADCOMP> /home/pi/pikrellcam/media/archive nfs users,noauto 0 0
+dadcomp:<FULL_PATH_TO_ARCHIVE_ON_DADCOMP> /home/pi/pikrellcam/media/archive nfs users,noauto 0 0
 ```
 * Mount the remote archive from the Raspberry Pi.
 ```
-	sudo mount dadcomp:<FULL_PATH_TO_ARCHIVE_ON_DADCOMP>
+sudo mount dadcomp:<FULL_PATH_TO_ARCHIVE_ON_DADCOMP>
 ```
 * Nothing should happen if it’s all worked.
 * Enter ```df``` in the terminal and hit enter; you should see a line in the output confirming the connection.
