@@ -98,7 +98,7 @@ sudo apt-get dist-upgrade
 * Enter the following commands one at a time pressing Enter after each line. This will check that you have the latest versions installed. You may have to answer a few questions. Just type Y for yes.
 ```
 sudo apt-get update
-sudo apt-get install real-vnc-server real-vnc-viewer
+sudo apt-get install realvnc-vnc-server realvnc-vnc-viewer
 ```
 * Sign into RealVNC account on the Raspberry Pi.
   * Click on the VNC symbol at the top of the screen
