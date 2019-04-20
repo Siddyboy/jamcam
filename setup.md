@@ -275,7 +275,9 @@ latitude XX.XXN
 longitude YY.YYW
 ```
 * Finally much further up find the ```on_motion_preview_save``` option. Set it to be
-```on_motion_preview_save mpack -s pikrellcam@$H $F``` 
+```
+on_motion_preview_save mpack -s pikrellcam@$H $F <destination-email-address>
+``` 
 * Hit Ctrl+X and confirm the writing of the file.
 * Now stop and restart the pikrellcam from the OSD.
 * Trigger a video by waving at the camera.
