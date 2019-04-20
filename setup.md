@@ -251,16 +251,17 @@ man mailutils
 ```
 sudo nano /etc/ssmtp/ssmtp.conf
 ```
-* Change the ```root=postmaster``` to ```root=sc```
+* Keep the ```root=postmaster```.
 * Change the ```mailhub=...``` to ```mailhub=smtp.gmail.com:587```
+* Keep the ```hostname=raspberrypi```
 * Delete the ```#``` in front of ```FromLineOverride=YES```
-* Add ```AuthUser=gmail.com```
-* Add ```AuthPass=```
+* Add ```AuthUser=<your-gmail-username>@gmail.com```
+* Add ```AuthPass=<your-gmail-password>```
 * Add ```UseSTARTTLS=YES```
 * Get Daddy to check your entries before hitting Ctrl-X to write the changes and exit.
 * Enter the following command to send a test message.
 ```
-Echo “Testing...” | mail -s “Test Message” om
+Echo “Testing...” | mail -s “Test Message” <destination-email-address>
 ``` 
 * Log in to your email and see if you get an email – it might take a few seconds to come through.
 * Now we have to edit the ```pikrellcam.conf``` configuration file:
