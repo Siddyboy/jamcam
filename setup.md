@@ -241,9 +241,9 @@ nano ~/pikrellcam/scripts/startup
 sudo apt-get update
 sudo apt-get install ssmtp mailutils
 ```
-* When it’s finished you should be able to check they have installed OK by typing the following commands in turn. You have to hit ‘q’ to quit after each one. They just show the manual pages for each command:
+* When it’s finished you should be able to check they have installed OK by typing the following commands in turn. The first one just reports the version of ssmtp you have installed. Not sure about mailutils TODO(SCJK) add verification:
 ```
-man ssmtp
+ssmtp -V
 man mailutils
 ```
 * Next we have to edit the ```ssmtp.conf``` configuration file to tell it our email details. We have to have a gmail account that the Raspberry Pi can send emails to which will relay them to us. Ask Daddy what the email address is for that account.
