@@ -12,6 +12,7 @@
 #### How to
 * On computer search up www.raspberrypi.org.
 * Download ‘Raspian Stretch’ (not NOOBS or LITE).
+* (Note 'Buster' fails at mail setup - probably ssmtp vs msmtp issue. Try 2019-04-08 Stretch version.)
 * Choose the ‘Download ZIP’, and choose ‘Save File’.
   * It will take a few minutes to download – you might have to go and get a drink while you are waiting.
 * Find where the zip file is saved. Try looking in your ‘Downloads’ folder.
@@ -65,11 +66,11 @@
   * Right-click on the network symbol (red crosses) and select your WLAN from the list.
   * You will have to ask the owner for the password.
 * Click OK and wait for a connection.
-* Update the Raspberry Pi operating system.
+* Update the Raspberry Pi operating system. Note we are not changing the release.
   * Open a terminal and type:
 ```
-sudo apt-get update
-sudo apt-get dist-upgrade
+sudo apt update
+sudo apt full-upgrade
 ```
   * You may have to enter a password, and answer a few questions. And wait a while.
 * Click on the raspberry icon and select 'Preferences', and then 'Raspberry Pi Configuration'.
@@ -97,8 +98,8 @@ sudo apt-get dist-upgrade
 * With the Raspberry Pi running open a terminal to access the Command Line Interface – or CLI. Click on the terminal icon at the top of the screen.
 * Enter the following commands one at a time pressing Enter after each line. This will check that you have the latest versions installed. You may have to answer a few questions. Just type Y for yes.
 ```
-sudo apt-get update
-sudo apt-get install realvnc-vnc-server realvnc-vnc-viewer
+sudo apt update
+sudo apt install realvnc-vnc-server realvnc-vnc-viewer
 ```
 * Sign into RealVNC account on the Raspberry Pi.
   * Click on the VNC symbol at the top of the screen
@@ -261,7 +262,7 @@ sudo nano /etc/ssmtp/ssmtp.conf
 * Get Daddy to check your entries before hitting Ctrl-X to write the changes and exit.
 * Enter the following command to send a test message.
 ```
-Echo “Testing...” | mail -s “Test Message” <destination-email-address>
+echo “Testing...” | mail -s “Test Message” <destination-email-address>
 ``` 
 * Log in to your email and see if you get an email – it might take a few seconds to come through.
 * Now we have to edit the ```pikrellcam.conf``` configuration file:
