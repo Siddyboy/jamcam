@@ -268,11 +268,11 @@ Echo “Testing...” | mail -s “Test Message” <destination-email-address>
 ```
 sudo nano ~/.pikrellcam/pikrellcam.conf
 ```
-* First use the ‘Page Down’ key to get right to the end of the file. Here we change one camera setting. When we build the whole camera we will find out that the picture is upside down. We can rotate it the right way up by editing the ```rotation 0``` line to read ```rotation 180``.
+* First use the ‘Page Down’ key to get right to the end of the file. Here we change one camera setting. When we build the whole camera we will find out that the picture is upside down. We can rotate it the right way up by editing the ```rotation 0``` line to read ```rotation 180```.
 * Go a bit further up in the file and in the ‘Miscellaneous Options’ section we have to change the latitude and longitude settings to be where we live. This way if we want (later) to set the camera to be off at night it will know when the sunrise and sunset is. Numbers in decimal to 2 decimal places.
 ```
-latitude XX.XXN
-longitude YY.YYW
+latitude <XX.XX>N
+longitude <YY.YY>W
 ```
 * Finally much further up find the ```on_motion_preview_save``` option. Set it to be
 ```
